@@ -5,6 +5,13 @@
   --earth-yellow: #dda15eff;
   --tigers-eye: #bc6c25ff;
 }
+.dashboard {
+  background: var(--earth-yellow);
+}
+.dashboardBoxes {
+  background: var(--tigers-eye);
+  color: white;
+}
 .highlight {
   color: var(--dark-moss-green);
 }

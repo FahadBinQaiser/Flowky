@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="container flex flex-col lg:flex-row justify-between items-center gap-3 text-balance Nunito max-w-7xl mx-auto">
       <div className="leftSide w-full lg:w-1/2">
         <div className="content">
-          <h1 className="font-[Lora] PakistanGreen text-4xl lg:text-6xl xl:text-7xl">
+          <h1 className="font-[Lora] PakistanGreen text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
             Transform Your Business with{" "}
             <span className="highlight inline-block">Smart Analytics</span>
           </h1>

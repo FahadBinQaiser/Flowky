@@ -3,7 +3,7 @@ import { TrendingUp } from "lucide-react"
 
 export default function Dashboard() {
   return (
-    <div className="relative bg-earth-yellow rounded-2xl ml-4 p-8 shadow-2xl w-full mx-auto">
+    <div className="relative dashboard bg-earth-yellow rounded-2xl lg:ml-4 p-8 shadow-2xl w-full mx-auto">
       <div className="flex items-center justify-between mb-6">
         <h3 className="text-lg font-semibold text-pakistan-green">
           Analytics Dashboard
@@ -39,10 +39,10 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="absolute -top-4 -right-4 bg-tigers-eye text-cornsilk px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+      <div className="absolute dashboardBoxes -top-4 -right-4 bg-tigers-eye text-cornsilk px-4 py-2 rounded-full text-sm font-medium shadow-lg">
         Real-time data
       </div>
-      <div className="absolute -bottom-4 -left-4 bg-tigers-eye text-cornsilk px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+      <div className="absolute dashboardBoxes -bottom-4 -left-4 bg-tigers-eye text-cornsilk px-4 py-2 rounded-full text-sm font-medium shadow-lg">
         AI-powered
       </div>
     </div>
