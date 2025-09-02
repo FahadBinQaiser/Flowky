@@ -1,0 +1,28 @@
+:root {
+  --dark-moss-green: #606c38ff;
+  --pakistan-green: #283618ff;
+  --cornsilk: #fefae0ff;
+  --earth-yellow: #dda15eff;
+  --tigers-eye: #bc6c25ff;
+}
+.highlight {
+  color: var(--dark-moss-green);
+}
+.bgColor {
+  background-color: var(--dark-moss-green);
+  color: white;
+}
+.Nunito {
+  font-family: "Nunito", sans-serif;
+}
+.PakistanGreen {
+  color: var(--pakistan-green);
+}
+body {
+  background-color: var(--cornsilk);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
