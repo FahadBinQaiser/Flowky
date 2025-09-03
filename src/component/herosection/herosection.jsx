@@ -64,7 +64,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="rightSide w-full lg:w-1/2">
+      <div className="rightSide pt-7 sm:pt-0 w-full lg:w-1/2">
         <Dashboard />
       </div>
     </div>

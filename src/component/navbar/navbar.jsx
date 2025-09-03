@@ -3,7 +3,12 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
+  if (open) {
+    document.body.style.overflow = "hidden";
+  }
+  else {
+    document.body.style.overflow = "auto";
+  }
   return (
     <nav className="my-4 max-w-7xl font-[Lora] mx-auto w-full z-50">
       <div className="flex items-center py-3 justify-between">
@@ -35,7 +40,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden fixed top-20 right-0 w-64 bg-transparent backdrop-blur-3xl shadow-xl rounded-l-2xl transform transition-transform duration-300 ease-in-out z-50
+        className={`md:hidden fixed top-20 right-0 Nunito h-svh w-full bg-transparent backdrop-blur-3xl shadow-xl rounded-l-2xl transform transition-transform duration-300 ease-in-out z-50
       ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex flex-col items-center px-6 py-10 space-y-6">
@@ -43,15 +48,15 @@ const Navbar = () => {
             <a
               key={link}
               href="#"
-              className="text-lg font-medium text-[#fafafa] transition"
+              className="font-medium PakistanGreen text-3xl transition"
             >
               {link}
             </a>
           ))}
 
-          <button className="bgColor px-7 rounded-sm py-1">
-            Start Free Trial
-          </button>
+            <button className="bgColor transition duration-300 ease-out cursor-pointer text-xl Nunito px-7 rounded-sm py-2">
+                Start Free Trial
+            </button>
         </div>
       </div>
     </nav>
