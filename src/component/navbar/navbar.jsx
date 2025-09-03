@@ -4,10 +4,9 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   if (open) {
-    document.body.style.overflow = "hidden";
-  }
-  else {
-    document.body.style.overflow = "auto";
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "auto";
   }
   return (
     <nav className="my-4 max-w-7xl font-[Lora] mx-auto w-full z-50">
