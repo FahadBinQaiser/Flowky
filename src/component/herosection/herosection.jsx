@@ -18,10 +18,10 @@ export default function HeroSection() {
         </div>
 
         <div className="buttons text-lg pt-6 flex flex-row gap-4">
-          <button className="bgColor px-7 rounded-sm py-1">
+          <button className="bgColor transition duration-300 ease-out cursor-pointer px-7 rounded-sm py-1">
             Start Free Trial
           </button>
-          <button className="border border-[#dda15eff] px-7 rounded-sm py-1">
+          <button className="border hover-button cursor-pointer border-[#dda15eff] px-7 rounded-sm py-1">
             Watch Demo
           </button>
         </div>

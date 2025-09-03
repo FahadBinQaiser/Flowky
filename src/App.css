@@ -25,6 +25,13 @@
   background-color: var(--dark-moss-green);
   color: white;
 }
+.bgColor {
+  background-color: var(--dark-moss-green);
+  color: white;
+}
+.bgColor:hover {
+  background-color: var(--pakistan-green);
+}
 .Nunito {
   font-family: "Nunito", sans-serif;
 }
@@ -35,9 +42,36 @@
   color: var(--pakistan-green);
 }
 body {
+  overflow-x: hidden;
   background-color: var(--cornsilk);
   font-size: 30px;
   margin: 0;
   min-height: 100vh;
   width: 100vw;
+}
+
+.hover-button {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.hover-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #dda15eff;
+  transition: height 0.3s ease;
+  z-index: -1;
+}
+
+.hover-button:hover::before {
+  height: 100%;
+}
+
+.hover-button:hover {
+  color: white;
 }
