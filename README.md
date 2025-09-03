@@ -4,11 +4,13 @@ A **React.js based Hero Section made with Tailwind CSS**
 
 ## Color Palette
 
+```
 - --dark-moss-green: #606c38ff;
 - --pakistan-green: #283618ff;
 - --cornsilk: #fefae0ff;
 - --earth-yellow: #dda15eff;
 - --tigers-eye: #bc6c25ff;
+```
 
 ## Tech Stack
 
