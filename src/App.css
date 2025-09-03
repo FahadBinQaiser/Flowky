@@ -8,6 +8,9 @@
 .dashboard {
   background: var(--earth-yellow);
 }
+.cornsilk {
+  background: var(--tigers-eye);
+}
 .dashboardBoxes {
   background: var(--tigers-eye);
   color: white;
@@ -21,6 +24,9 @@
 }
 .Nunito {
   font-family: "Nunito", sans-serif;
+}
+.bgPakistanGreen {
+  background-color: var(--pakistan-green);
 }
 .PakistanGreen {
   color: var(--pakistan-green);

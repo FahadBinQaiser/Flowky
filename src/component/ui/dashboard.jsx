@@ -2,9 +2,11 @@ import React from "react"
 import { TrendingUp } from "lucide-react"
 
 export default function Dashboard() {
+  const data = [40, 65, 45, 80, 55, 90]
+
   return (
-    <div className="relative dashboard bg-earth-yellow rounded-2xl lg:ml-4 p-8 shadow-2xl w-full mx-auto">
-      <div className="flex items-center justify-between mb-6">
+    <div className="relative dashboard rounded-2xl lg:ml-4 p-8 shadow-2xl w-full max-w-3xl mx-auto">
+      <div className="flex items-center justify-between mb-8">
         <h3 className="text-lg font-semibold text-pakistan-green">
           Analytics Dashboard
         </h3>
@@ -14,17 +16,20 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="h-48 bg-cornsilk rounded-lg flex items-end justify-center gap-2 p-4 mb-6">
-        {[40, 65, 45, 80, 55, 90, 70].map((h, i) => (
+      <div className="h-48 flex items-end justify-between gap-4 mb-10">
+        {data.map((h, i) => (
           <div
             key={i}
-            className="bg-pakistan-green rounded-t-md flex-1 hover:bg-dark-moss-green transition-all duration-500"
-            style={{ height: `${h}%` }}
+            className="bgPakistanGreen rounded-t-lg transition-all duration-500"
+            style={{
+              height: `${h}%`,
+              width: "65px",
+            }}
           />
         ))}
       </div>
 
-      <div className="grid grid-cols-3 gap-4 text-center">
+      <div className="grid grid-cols-3 gap-6 text-center">
         <div>
           <p className="text-2xl font-bold text-pakistan-green">2.4k</p>
           <p className="text-sm text-dark-moss-green">Active Users</p>
