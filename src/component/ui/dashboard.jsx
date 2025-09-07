@@ -2,10 +2,10 @@ import React from "react"
 import { TrendingUp } from "lucide-react"
 
 export default function Dashboard() {
-  const data = [40, 65, 45, 80, 55, 90]
+  const data = [40, 65, 50, 90, 55, 90]
 
   return (
-    <div className="relative dashboard rounded-2xl lg:ml-4 p-8 shadow-2xl w-full max-w-3xl mx-auto">
+    <div className="relative dashboard rounded-2xl lg:ml-6 p-8 shadow-2xl w-full max-w-4xl mx-auto">
       <div className="flex items-center justify-between mb-8">
         <h3 className="text-lg font-semibold text-pakistan-green">
           Analytics Dashboard
@@ -23,7 +23,7 @@ export default function Dashboard() {
             className="bgPakistanGreen rounded-t-lg transition-all duration-500"
             style={{
               height: `${h}%`,
-              width: "65px",
+              width: "100px",
             }}
           />
         ))}

@@ -3,7 +3,7 @@ import Dashboard from "../ui/dashboard";
 
 export default function HeroSection() {
   return (
-    <div className="container flex h-[90vh] flex-col lg:flex-row items-center text-balance Nunito max-w-7xl">
+    <div className="container flex h-[90vh] flex-col sm:justify-center lg:flex-row items-center text-balance Nunito max-w-7xl">
       <div className="leftSide w-full lg:w-[90%]">
         <div className="content">
           <h1 className="font-[Lora] PakistanGreen text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
